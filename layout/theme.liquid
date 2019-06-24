@@ -33,7 +33,8 @@
   {{ 'style.scss' | asset_url | stylesheet_tag }}
 </head>
 <body>
-  <h1>Hello from Dewi Surf Supply Co!</h1>
+  {% section 'header'%}
+  
   {{ content_for_layout }}
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
